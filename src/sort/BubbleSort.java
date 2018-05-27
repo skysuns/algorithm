@@ -8,6 +8,7 @@ public class BubbleSort {
 		bubbleSort(data);
 		System.out.println(Arrays.toString(data));
 	}
+
 	public static int[] bubbleSort(int[] arr){
 		if(arr==null || arr.length==0){
 			return arr;
@@ -23,6 +24,7 @@ public class BubbleSort {
 		}
 		return arr;
 	}
+
 	public static int[] bubbleSortOptimizaiton(int[] arr){
 		if(arr==null || arr.length==0){
 			return arr;

@@ -8,13 +8,15 @@ public class QuickSort {
 	public static void main(String[] args){
 		int[] data = {1,2,7,5,10,3,8};
 		quickSort(data, data.length, 0, data.length-1);
-		if(flag == true){
+		System.out.println();
+		if(flag){
 			System.out.println(Arrays.toString(data));
 		}else{
 			System.out.println("Data is invalid");
 		}
 	}
-	//采用了分治和递归的思想
+
+	//閲囩敤浜嗗垎娌诲拰閫掑綊鐨勬�濇兂
 	public static void quickSort(int[] data, int length, int start, int end) {
 		if(data==null || length==0 || start<0 || end>=length){
 			flag = false;
@@ -24,8 +26,7 @@ public class QuickSort {
 		if(start == end){
 			return;
 		}
-		
-		////////////////核心////////////////////
+		////////////////鏍稿績////////////////////
 		int division = start-1;
 		for(int i=start; i<end; i++){
 			if(data[i] < data[end]){

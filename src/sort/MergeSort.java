@@ -20,7 +20,7 @@ public class MergeSort {
 		}
 		for(int gap=1; gap<length; gap=2*gap){
 			int i=0;
-			for(i=0; i+2*gap-1<length; i+=2*gap){
+			for(; i+2*gap-1<length; i+=2*gap){
 				mergeCore(data, i, i+gap-1, i+2*gap-1);
 			}
 			if(i+gap-1<length){
